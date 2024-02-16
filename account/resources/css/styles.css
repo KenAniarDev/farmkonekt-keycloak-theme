@@ -1,110 +1,181 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 body {
-    font-family: 'Poppins', sans-serif !important;
-    background: #fff !important;
-    font-family: sans-serif;
-    margin: 0px;
-    padding-top: 20px;
+  font-family: "Poppins", sans-serif !important;
+  background: #fff !important;
+  font-family: sans-serif;
+  margin: 0px;
+  padding-top: 20px;
+}
+body.admin-console.user.user {
+  padding: 0px;
+}
+.nav.navbar-nav.navbar-utility {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 768px;
+  list-style: none;
 }
 .kc-logo-text {
-    display: none;
+  display: none;
+}
+
+body > .container {
+  display: flex;
+  max-width: 768px;
+  padding: 0 20px;
+  margin: 0 auto;
+  gap: 20px;
+  padding-top: 34px;
 }
 
 /* Change content to change the title of the page*/
 div#kc-header::after {
-    padding-top: 3px;
-    font-size: 40px;
-    line-height: 50px;
-    margin-bottom: 15px;
-    background-image: url('../img/fklogo.webp');
+  padding-top: 3px;
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 15px;
+  background-image: url("../img/fklogo.webp");
 }
 header.navbar-pf {
-    background-color: white !important;
-    border-color: white !important;
+  background-color: white !important;
+  border-color: white !important;
 }
 .navbar-header {
-    background-color: white !important;
-    border-color: white !important;
+  background-color: white !important;
+  border-color: white !important;
 }
 div.card-pf {
-    max-width: 400px;
-    margin: 0 auto;
+  max-width: 400px;
+  margin: 0 auto;
 }
-nav navbar-nav navbar-utility li a{
-    color: #fff !important;
+.nav.navbar-nav.navbar-utility {
+  margin: 0 auto;
+  padding-top: 44px;
+  padding-left: 20px;
+}
+nav navbar-nav navbar-utility li a {
+  color: #fff !important;
 }
 
 div.login-pf-page {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-input[type=text]:hover,
-input[type=password]:hover {
-    border-bottom-color: rgb(18, 124, 64) !important;
+input[type="text"]:hover,
+input[type="password"]:hover {
+  border-bottom-color: rgb(18, 124, 64) !important;
 }
-input[type=submit] {
-    background-color: rgb(18, 124, 64) !important;
+input[type="submit"] {
+  background-color: rgb(18, 124, 64) !important;
 }
 .navbar-header .container {
-    display: none;
+  display: none;
 }
 header.navbar-pf {
-    height: 0px;
+  height: 0px;
 }
 ul.nav.navbar-nav.navbar-utility li:first-child {
-   display: none;
+  display: none;
 }
- ul.nav.navbar-nav.navbar-utility li:last-child a {
-    margin-top: -39px;
-    border: none;
-    color: white !important;
-    background-color: rgb(18, 124, 64) !important;
-    border: none;
-    padding: 10px 14px;
- }
- .bs-sidebar {
-    max-width: 120px;
-    margin-top: 28px;
- }
- .bs-sidebar ul {
-    list-style: none;
-    padding-left: 0px;
- }
- .bs-sidebar a {
-    color: rgb(18, 124, 64);
- }
- nav.navbar {
-    margin-top: 20px
- }
- a {
-    color: rgb(18, 124, 64);
- }
- button.btn-primary {
-    background-color: rgb(18, 124, 64) !important;
-    background-image: none;
-    border-color: rgb(18, 124, 64) !important;
- }
- @media (min-width: 768px) {
-    .admin-console.user.user {
-        padding-right: 60px;
-     }
-     ul.nav.navbar-nav.navbar-utility li:last-child a {
-        margin-top: 0px;
-     }
-     .bs-sidebar {
-        margin-top: 20px;
-     }
-     body {
-        padding-top: 10px;
-     }
+ul.nav.navbar-nav.navbar-utility li:last-child a {
+  margin-top: -39px;
+  border: none;
+  color: white !important;
+  background-color: rgb(18, 124, 64) !important;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.bs-sidebar {
+  max-width: 120px;
+  margin-top: 28px;
+}
+.bs-sidebar ul {
+  list-style: none;
+  padding-left: 0px;
+}
+.bs-sidebar a {
+  color: rgb(18, 124, 64);
+}
+nav.navbar {
+  margin-top: 20px;
+}
+a {
+  color: rgb(18, 124, 64);
+}
+button.btn-primary {
+  background-color: rgb(18, 124, 64) !important;
+  background-image: none;
+  border-color: rgb(18, 124, 64) !important;
+}
+@media (min-width: 768px) {
+  .admin-console.user.user {
+    padding-right: 60px;
+  }
+  ul.nav.navbar-nav.navbar-utility li:last-child a {
+    margin-top: 0px;
+  }
+  .bs-sidebar {
+    margin-top: 20px;
+  }
+  body {
+    padding-top: 10px;
+  }
 }
 
 input.form-control:hover,
 input.form-control:focus {
-    box-shadow: none;
-    border-color: rgb(18, 124, 64) !important;
+  box-shadow: none;
+  border-color: rgb(18, 124, 64) !important;
+}
+input.form-control {
+  border: 1px solid #d2d2d2;
+  padding: 5px 8px;
+  height: 24px;
+  width: 240px;
+}
+.form-horizontal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.required {
+  color: red;
+}
+button[value="Save"] {
+  color: white !important;
+  background-color: rgb(18, 124, 64) !important;
+  border: none;
+  cursor: pointer;
+  padding: 10px 14px;
+  border-radius: 4px;
+  border: 1px solid rgb(18, 124, 64) !important;
+}
+
+button[value="Cancel"] {
+  color: rgb(18, 124, 64) !important;
+  background-color: white !important;
+  border: 1px solid rgb(18, 124, 64) !important;
+  border: none;
+  padding: 10px 14px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+#logout-all-sessions {
+  color: white !important;
+  background-color: red !important;
+  border: none;
+  cursor: pointer;
+  padding: 10px 14px;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+h2,
+.bs-sidebar {
+  margin-top: 0px;
 }
